@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Storage Demo App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Storage Demo App</h1>
+        <div>
+            <h2>Set Cookie</h2>
+            <form id="cookieForm">
+                <label for="cookieName">Cookie Name:</label>
+                <input type="text" id="cookieName" name="cookieName" required>
+                <label for="cookieValue">Cookie Value:</label>
+                <input type="text" id="cookieValue" name="cookieValue" required>
+                <button type="submit">Set Cookie</button>
+            </form>
+        </div>
+        <div>
+            <h2>Local Storage</h2>
+            <form id="localStorageForm">
+                <label for="localStorageKey">Key:</label>
+                <input type="text" id="localStorageKey" name="localStorageKey" required>
+                <label for="localStorageValue">Value:</label>
+                <input type="text" id="localStorageValue" name="localStorageValue" required>
+                <button type="submit">Set Local Storage</button>
+                <button type="button" onclick="getLocalStorage()">Get Local Storage</button>
+            </form>
+        </div>
+        <div>
+            <h2>Session Storage</h2>
+            <form id="sessionStorageForm">
+                <label for="sessionStorageKey">Key:</label>
+                <input type="text" id="sessionStorageKey" name="sessionStorageKey" required>
+                <label for="sessionStorageValue">Value:</label>
+                <input type="text" id="sessionStorageValue" name="sessionStorageValue" required>
+                <button type="submit">Set Session Storage</button>
+                <button type="button" onclick="getSessionStorage()">Get Session Storage</button>
+            </form>
+        </div>
+        <div id="output"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
